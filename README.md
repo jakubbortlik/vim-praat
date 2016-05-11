@@ -11,5 +11,5 @@ Plugin 'jakubbortlik/vim-praat'		" syntax highlighting for praat
 	
 ##Credits
 The syntax highlighting is based on Pablo Arantes' praat.vim
-The ftdetect and ftplugin are base on [Mart
+The ftdetect and ftplugin are based on [Mart
 Lubbers'](git://github.com/dopefishh/vim-praat.git)

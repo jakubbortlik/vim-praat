@@ -25,9 +25,9 @@ setlocal commentstring=#%s
 " and remove a comment leader when joining lines.
 setlocal fo-=t fo+=croqlj
 
-" Format comments to be up to 78 characters long
+" Format comments to be up to 80 characters long
 if &tw == 0
-	setlocal tw=78
+	setlocal tw=80
 endif
 
 " Set the foldmethod

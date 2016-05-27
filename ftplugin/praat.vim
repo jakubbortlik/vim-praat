@@ -9,9 +9,9 @@ endif
 let b:did_praatftp = 1
 
 " Add matchit.vim support:
-let b:match_words='\<if\>:\<then\>:\<elif\>:\<elseif\>:\<else\>:\<endif\>,
-			\\<for\>:\<endfor\>,\<while\>:\<endwhile\>,\<repeat\>:\<until\>,
-			\\<procedure\>:\<endproc\>'
+let b:match_words='\<if\>:\<then\>:\<elif\>:\<elsif\>:\<elseif\>:\<else\>:
+			\\<endif\>,\<for\>:\<endfor\>,\<while\>:\<endwhile\>,\<repeat\>:
+			\\<until\>,\<procedure\>:\<endproc\>'
 
 " Allow "[d" to be used to find a macro definition:
 let &l:define='\\\(procedure\|mathchar\|count\|dimen\|muskip\|skip\|toks\)\='

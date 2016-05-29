@@ -44,7 +44,7 @@ syntax keyword praatDefine editor endeditor procedure endproc
 "alternatively syntax keyword praatKeyword editor endeditor procedure endproc
 "alternatively syntax keyword praatKeyword form endform beginPause endPause
 
-syntax keyword praatDefine form endform beginPause endPause
+syntax keyword praatDefine form endform beginPause pauseScript endPause
 syntax keyword praatDefine pause system system_nocheck
 "alternative: syntax keyword praatKeyword pause system system_nocheck
 syntax keyword praatPrecondit include
@@ -108,7 +108,7 @@ syntax keyword praatObject demoWindowTitle demoShow
 syntax keyword praatTodo TODO
 
 " Tags and Calls
-"syntax keyword praatTag label goto
+"syntax keyword praatTag
 syntax match praatDefine "[\n\t]\?label\s"
 syntax match praatTag "[\n\t]\?goto\s"
 syntax match praatTag "@\a\+:\?"
@@ -137,11 +137,13 @@ syntax match praatCommand "\(Read from file\|Open long sound file\)"
 syntax match praatCommand "\(chooseDirectory$\|Open long sound file\)"
 syntax match praatCommand "\(Save as tab-separated file\|Write to text file\)"
 syntax match praatCommand "\(Save as comma-separated file\)"
+syntax match praatCommand "\(fileReadable\|selected\|numberOfSelected\)"
 syntax match praatCommand "\(Insert row\|Insert column\)"
 syntax match praatCommand "\(Append row\|Append column\)" 
 syntax match praatCommand "\(Remove row\|Remove column\)"
 syntax match praatCommand "\(writeInfoLine\|appendInfoLine\)" 
 syntax match praatCommand "\(Get value\|Get column index\)" 
+syntax match praatCommand "\(Randomize\)"
 
 " String variables
 " syntax match praatStrVar "\l\w*\$" contains=praatStrFunc

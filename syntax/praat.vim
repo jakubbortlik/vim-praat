@@ -44,7 +44,8 @@ syntax keyword praatDefine editor endeditor procedure endproc
 "alternatively syntax keyword praatKeyword editor endeditor procedure endproc
 "alternatively syntax keyword praatKeyword form endform beginPause endPause
 
-syntax keyword praatDefine form endform beginPause pauseScript endPause
+syntax keyword praatDefine form endform beginPause endPause
+syntax keyword praatDefine pauseScript exitScript
 syntax keyword praatDefine pause system system_nocheck
 "alternative: syntax keyword praatKeyword pause system system_nocheck
 syntax keyword praatPrecondit include
@@ -111,7 +112,7 @@ syntax keyword praatTodo TODO
 "syntax keyword praatTag
 syntax match praatDefine "[\n\t]\?label\s"
 syntax match praatTag "[\n\t]\?goto\s"
-syntax match praatTag "@\a\+:\?"
+syntax match praatTag "@\(_\|\a\)\+:\?"
 
 " ... at broken lines
 " @
@@ -132,7 +133,7 @@ syntax match praatCommand "\(Get end point\|Extract part\|Search column\)"
 syntax match praatCommand "\(Get number of strings\|Get number of rows\)"
 syntax match praatCommand "\(Get number of intervals\|Get number of tiers\)"
 syntax match praatCommand "\(Get tier name\|Is interval tier\)"
-syntax match praatCommand "\(Get string\)"
+syntax match praatCommand "\(Get string\|Extract one tier\)"
 syntax match praatCommand "\(Read from file\|Open long sound file\)"
 syntax match praatCommand "\(chooseDirectory$\|Open long sound file\)"
 syntax match praatCommand "\(Save as tab-separated file\|Write to text file\)"

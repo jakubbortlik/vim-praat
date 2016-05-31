@@ -144,7 +144,7 @@ syntax match praatCommand "\(Append row\|Append column\)"
 syntax match praatCommand "\(Remove row\|Remove column\)"
 syntax match praatCommand "\(writeInfoLine\|appendInfoLine\)" 
 syntax match praatCommand "\(Get value\|Get column index\|Get mean\)" 
-syntax match praatCommand "\(Randomize\)"
+syntax match praatCommand "\(Randomize\|Rename\)"
 
 " String variables
 " syntax match praatStrVar "\l\w*\$" contains=praatStrFunc

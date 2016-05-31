@@ -110,7 +110,7 @@ syntax keyword praatTodo TODO
 
 " Tags and Calls
 "syntax keyword praatTag
-syntax match praatDefine "[\n\t]\?label\s"
+syntax match praatDefine "\(_\)\@<![\n\t]\?label\s"
 syntax match praatTag "[\n\t]\?goto\s"
 syntax match praatTag "@\(_\|\a\)\+:\?"
 
@@ -123,7 +123,7 @@ syntax match praatTag "@\(_\|\a\)\+:\?"
 
 "syntax keyword praatCommand View Close Remove Edit Set Insert Randomize Append
 syntax match praatCommand "\(Save as text file\|Save as\)"
-syntax match praatCommand "\(View & Edit\|Close\|Remove\n\)"
+syntax match praatCommand "\(View & Edit\n\|Close\n\|Remove\n\|Scale times\n\)"
 syntax match praatCommand "\(Set numeric value\|Set string value\)"
 syntax match praatCommand "\(Read Table from tab-separated file\)"
 syntax match praatCommand "\(Create Table with column names\)"
@@ -143,7 +143,7 @@ syntax match praatCommand "\(Insert row\|Insert column\)"
 syntax match praatCommand "\(Append row\|Append column\)" 
 syntax match praatCommand "\(Remove row\|Remove column\)"
 syntax match praatCommand "\(writeInfoLine\|appendInfoLine\)" 
-syntax match praatCommand "\(Get value\|Get column index\)" 
+syntax match praatCommand "\(Get value\|Get column index\|Get mean\)" 
 syntax match praatCommand "\(Randomize\)"
 
 " String variables

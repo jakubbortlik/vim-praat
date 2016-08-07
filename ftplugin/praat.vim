@@ -20,6 +20,14 @@ let &l:define='\\\(procedure\|mathchar\|count\|dimen\|muskip\|skip\|toks\)\='
 " Comments start with a hash
 setlocal commentstring=#%s
 
+" temporary comments that are easy to find (";" in the first column)
+" add/remove comment in normal mode (takes [count]):
+nnoremap gcp :normal 0i;
+nnoremap gco @=':s/^;//e\|nohlsearch'
+" add/remove comment in visual mode:
+vnoremap gcp 0I;
+vnoremap gco :'<,'>s/^;//e\|nohlsearch
+
 " Set 'formatoptions' to break comment lines but not other lines,
 " insert the comment leader when hitting <CR> or using "o",
 " and remove a comment leader when joining lines.

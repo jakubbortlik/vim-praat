@@ -22,7 +22,7 @@ setlocal commentstring=#%s
 
 " temporary comments that are easy to find (";" in the first column)
 " add/remove comment in normal mode (takes [count]):
-nnoremap gcp :normal 0i;
+nnoremap gcp :normal! 0i;
 nnoremap gco @=':s/^;//e\|nohlsearch'
 " add/remove comment in visual mode:
 vnoremap gcp 0I;

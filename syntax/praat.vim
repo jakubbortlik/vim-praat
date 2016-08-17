@@ -3,7 +3,7 @@
 " Language: Praat - doing phonetics by computer (www.praat.org)
 " Based on: praat.vim by Pablo Arantes - parantes(at)fastmail(dot)fm
 " Extended by: Jakub Bortlik https://github.com/jakubbortlik/
-" Last Changed: May 11 2016
+" Last Changed: 2016 Aug 18
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if exists("b:current_syntax")
@@ -21,7 +21,7 @@ syntax keyword praattype real sentence word text
 
 " Loops and conditionals
 
-syntax keyword praatConditional if else elsif elif endif fi then
+syntax keyword praatConditional if else elsif endif
 syntax keyword praatRepeat for from to endfor repeat until while endwhile
 
 " Statements

@@ -21,7 +21,7 @@ syntax keyword praattype real sentence word text
 
 " Loops and conditionals
 
-syntax keyword praatConditional if else elsif endif
+syntax keyword praatConditional if else elsif elif endif
 syntax keyword praatRepeat for from to endfor repeat until while endwhile
 
 " Statements

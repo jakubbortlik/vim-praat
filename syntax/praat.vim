@@ -416,7 +416,7 @@ syntax match praatNumber "[-+]\?\d\+"
 syntax match praatNumber "[-+]\?\d*\.\d\+"
 
 " Comments
-syntax match praatComment "#.*$"
+syntax match praatComment "\(^\|\s\+\)#.*$"
 "syntax match praatComment "!.*$"
 syntax match praatComment ";.*$"
 
